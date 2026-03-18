@@ -13,7 +13,7 @@
       ]
     },
     "developer": {
-      "description": "Default engineering profile for most ECC users working across app codebases.",
+      "description": "Default Kotlin/Java/Spring engineering profile with general API skills and database support.",
       "modules": [
         "rules-core",
         "agents-core",
@@ -22,12 +22,13 @@
         "platform-configs",
         "workflow-quality",
         "framework-language",
+        "kotlin-java-spring",
         "database",
         "orchestration"
       ]
     },
-    "security": {
-      "description": "Security-heavy setup with baseline runtime support and security-specific guidance.",
+    "kotlin-spring": {
+      "description": "Focused Kotlin/Java/Spring profile for JVM backend and Android/KMP development. Includes general tech stacks (Redis, Postgres, Docker) and Spring-specific security.",
       "modules": [
         "rules-core",
         "agents-core",
@@ -35,25 +36,27 @@
         "hooks-runtime",
         "platform-configs",
         "workflow-quality",
+        "kotlin-java-spring",
+        "database",
+        "security",
+        "devops-infra"
+      ]
+    },
+    "security": {
+      "description": "Security-heavy setup with Spring Boot security and general security guidance.",
+      "modules": [
+        "rules-core",
+        "agents-core",
+        "commands-core",
+        "hooks-runtime",
+        "platform-configs",
+        "workflow-quality",
+        "kotlin-java-spring",
         "security"
       ]
     },
-    "research": {
-      "description": "Research and content-oriented setup for investigation, synthesis, and publishing workflows.",
-      "modules": [
-        "rules-core",
-        "agents-core",
-        "commands-core",
-        "hooks-runtime",
-        "platform-configs",
-        "workflow-quality",
-        "research-apis",
-        "business-content",
-        "social-distribution"
-      ]
-    },
     "full": {
-      "description": "Complete ECC install with all currently classified modules.",
+      "description": "Complete Spring/JVM install with all modules.",
       "modules": [
         "rules-core",
         "agents-core",
@@ -61,6 +64,7 @@
         "hooks-runtime",
         "platform-configs",
         "framework-language",
+        "kotlin-java-spring",
         "database",
         "workflow-quality",
         "security",
@@ -69,7 +73,6 @@
         "social-distribution",
         "media-generation",
         "orchestration",
-        "swift-apple",
         "agentic-patterns",
         "devops-infra",
         "supply-chain-domain",

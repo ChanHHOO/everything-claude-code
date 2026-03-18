@@ -99,40 +99,19 @@
       "stability": "stable"
     },
     {
-      "id": "framework-language",
+      "id": "kotlin-java-spring",
       "kind": "skills",
-      "description": "Core framework, language, and application-engineering skills.",
+      "description": "Kotlin, Java, and Spring Boot skills for JVM backend and Android/KMP development.",
       "paths": [
         "skills/android-clean-architecture",
-        "skills/api-design",
-        "skills/backend-patterns",
-        "skills/coding-standards",
         "skills/compose-multiplatform-patterns",
-        "skills/cpp-coding-standards",
-        "skills/cpp-testing",
-        "skills/django-patterns",
-        "skills/django-tdd",
-        "skills/django-verification",
-        "skills/frontend-patterns",
-        "skills/frontend-slides",
-        "skills/golang-patterns",
-        "skills/golang-testing",
         "skills/java-coding-standards",
+        "skills/jpa-patterns",
         "skills/kotlin-coroutines-flows",
         "skills/kotlin-exposed-patterns",
         "skills/kotlin-ktor-patterns",
         "skills/kotlin-patterns",
         "skills/kotlin-testing",
-        "skills/laravel-patterns",
-        "skills/laravel-tdd",
-        "skills/laravel-verification",
-        "skills/mcp-server-patterns",
-        "skills/perl-patterns",
-        "skills/perl-testing",
-        "skills/python-patterns",
-        "skills/python-testing",
-        "skills/rust-patterns",
-        "skills/rust-testing",
         "skills/springboot-patterns",
         "skills/springboot-tdd",
         "skills/springboot-verification"
@@ -155,13 +134,41 @@
       "stability": "stable"
     },
     {
+      "id": "framework-language",
+      "kind": "skills",
+      "description": "General application-engineering and API skills applicable across all stacks.",
+      "paths": [
+        "skills/api-design",
+        "skills/backend-patterns",
+        "skills/coding-standards",
+        "skills/frontend-patterns",
+        "skills/frontend-slides",
+        "skills/mcp-server-patterns"
+      ],
+      "targets": [
+        "claude",
+        "cursor",
+        "antigravity",
+        "codex",
+        "opencode"
+      ],
+      "dependencies": [
+        "rules-core",
+        "agents-core",
+        "commands-core",
+        "platform-configs"
+      ],
+      "defaultInstall": false,
+      "cost": "medium",
+      "stability": "stable"
+    },
+    {
       "id": "database",
       "kind": "skills",
-      "description": "Database and persistence-focused skills.",
+      "description": "Database and persistence-focused skills (general; JPA patterns are in kotlin-java-spring).",
       "paths": [
         "skills/clickhouse-io",
         "skills/database-migrations",
-        "skills/jpa-patterns",
         "skills/postgres-patterns"
       ],
       "targets": [
@@ -214,11 +221,8 @@
     {
       "id": "security",
       "kind": "skills",
-      "description": "Security review and security-focused framework guidance.",
+      "description": "Security review and Spring Boot security guidance.",
       "paths": [
-        "skills/django-security",
-        "skills/laravel-security",
-        "skills/perl-security",
         "skills/security-review",
         "skills/security-scan",
         "skills/springboot-security",
