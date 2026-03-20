@@ -1,39 +1,19 @@
-**Language:** English | [简体中文](README.zh-CN.md) | [繁體中文](docs/zh-TW/README.md) | [日本語](docs/ja-JP/README.md) | [한국어](docs/ko-KR/README.md)
+# Everything Claude Code — Spring
 
-# Everything Claude Code
-
-[![Stars](https://img.shields.io/github/stars/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/stargazers)
-[![Forks](https://img.shields.io/github/forks/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/network/members)
-[![Contributors](https://img.shields.io/github/contributors/affaan-m/everything-claude-code?style=flat)](https://github.com/affaan-m/everything-claude-code/graphs/contributors)
-[![npm ecc-universal](https://img.shields.io/npm/dw/ecc-universal?label=ecc-universal%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/ecc-universal)
-[![npm ecc-agentshield](https://img.shields.io/npm/dw/ecc-agentshield?label=ecc-agentshield%20weekly%20downloads&logo=npm)](https://www.npmjs.com/package/ecc-agentshield)
-[![GitHub App Install](https://img.shields.io/badge/GitHub%20App-150%20installs-2ea44f?logo=github)](https://github.com/marketplace/ecc-tools)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-![Shell](https://img.shields.io/badge/-Shell-4EAA25?logo=gnu-bash&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/-Go-00ADD8?logo=go&logoColor=white)
+![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?logo=kotlin&logoColor=white)
 ![Java](https://img.shields.io/badge/-Java-ED8B00?logo=openjdk&logoColor=white)
-![Perl](https://img.shields.io/badge/-Perl-39457E?logo=perl&logoColor=white)
+![Spring](https://img.shields.io/badge/-Spring%20Boot-6DB33F?logo=springboot&logoColor=white)
+![Shell](https://img.shields.io/badge/-Shell-4EAA25?logo=gnu-bash&logoColor=white)
 ![Markdown](https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white)
 
-> **50K+ stars** | **6K+ forks** | **30 contributors** | **5 languages supported** | **Anthropic Hackathon Winner**
+> A Spring/JVM-focused fork of [everything-claude-code](https://github.com/affaan-m/everything-claude-code). Kotlin, Java, Spring Boot only — non-JVM languages removed.
 
 ---
 
-<div align="center">
+**The performance optimization system for AI agent harnesses — scoped to Kotlin, Java, and Spring Boot.**
 
-**🌐 Language / 语言 / 語言**
-
-[**English**](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](docs/zh-TW/README.md) | [日本語](docs/ja-JP/README.md) | [한국어](docs/ko-KR/README.md)
-
-</div>
-
----
-
-**The performance optimization system for AI agent harnesses. From an Anthropic hackathon winner.**
-
-Not just configs. A complete system: skills, instincts, memory optimization, continuous learning, security scanning, and research-first development. Production-ready agents, hooks, commands, rules, and MCP configurations evolved over 10+ months of intensive daily use building real products.
+Production-ready agents, hooks, commands, rules, and MCP configurations for JVM backend development. Includes Spring Boot patterns, JPA, Spring Security, Kotlin Coroutines, Android/KMP, and general tech stacks (Redis, PostgreSQL, Docker).
 
 Works across **Claude Code**, **Codex**, **Cowork**, and other AI agent harnesses.
 
@@ -140,7 +120,7 @@ Get up and running in under 2 minutes:
 
 ```bash
 # Add marketplace
-/plugin marketplace add affaan-m/everything-claude-code
+/plugin marketplace add ChanHHOO/everything-claude-code
 
 # Install plugin
 /plugin install everything-claude-code@everything-claude-code
@@ -152,28 +132,25 @@ Get up and running in under 2 minutes:
 
 ```bash
 # Clone the repo first
-git clone https://github.com/affaan-m/everything-claude-code.git
+git clone https://github.com/ChanHHOO/everything-claude-code.git
 cd everything-claude-code
 
 # Install dependencies (pick your package manager)
 npm install        # or: pnpm install | yarn install | bun install
 
-# macOS/Linux
-./install.sh typescript    # or python or golang or swift or php
-# ./install.sh typescript python golang swift php
-# ./install.sh --target cursor typescript
-# ./install.sh --target antigravity typescript
+# macOS/Linux — installs Kotlin/JVM rules
+./install.sh kotlin
+# ./install.sh --target cursor kotlin
+# ./install.sh --target antigravity kotlin
 ```
 
 ```powershell
 # Windows PowerShell
-.\install.ps1 typescript   # or python or golang or swift or php
-# .\install.ps1 typescript python golang swift php
-# .\install.ps1 --target cursor typescript
-# .\install.ps1 --target antigravity typescript
+.\install.ps1 kotlin
+# .\install.ps1 --target cursor kotlin
 
 # npm-installed compatibility entrypoint also works cross-platform
-npx ecc-install typescript
+npx ecc-install kotlin
 ```
 
 For manual install instructions see the README in the `rules/` folder.
@@ -191,7 +168,7 @@ For manual install instructions see the README in the `rules/` folder.
 /plugin list everything-claude-code@everything-claude-code
 ```
 
-✨ **That's it!** You now have access to 25 agents, 108 skills, and 57 commands.
+✨ **That's it!** You now have access to JVM-focused agents, skills, and commands.
 
 ---
 
@@ -253,19 +230,20 @@ everything-claude-code/
 |   |-- marketplace.json    # Marketplace catalog for /plugin marketplace add
 |
 |-- agents/           # Specialized subagents for delegation
-|   |-- planner.md           # Feature implementation planning
-|   |-- architect.md         # System design decisions
-|   |-- tdd-guide.md         # Test-driven development
-|   |-- code-reviewer.md     # Quality and security review
-|   |-- security-reviewer.md # Vulnerability analysis
-|   |-- build-error-resolver.md
-|   |-- e2e-runner.md        # Playwright E2E testing
-|   |-- refactor-cleaner.md  # Dead code cleanup
-|   |-- doc-updater.md       # Documentation sync
-|   |-- go-reviewer.md       # Go code review
-|   |-- go-build-resolver.md # Go build error resolution
-|   |-- python-reviewer.md   # Python code review (NEW)
-|   |-- database-reviewer.md # Database/Supabase review (NEW)
+|   |-- planner.md              # Feature implementation planning
+|   |-- architect.md            # System design decisions
+|   |-- tdd-guide.md            # Test-driven development
+|   |-- code-reviewer.md        # Quality and security review
+|   |-- security-reviewer.md    # Vulnerability analysis
+|   |-- build-error-resolver.md # General build error resolution
+|   |-- e2e-runner.md           # Playwright E2E testing
+|   |-- refactor-cleaner.md     # Dead code cleanup
+|   |-- doc-updater.md          # Documentation sync
+|   |-- kotlin-reviewer.md      # Kotlin/KMP code review
+|   |-- kotlin-build-resolver.md
+|   |-- java-reviewer.md        # Java/Spring code review
+|   |-- java-build-resolver.md  # Maven/Gradle build error resolution
+|   |-- database-reviewer.md    # Database/Supabase review
 |
 |-- skills/           # Workflow definitions and domain knowledge
 |   |-- coding-standards/           # Language best practices
